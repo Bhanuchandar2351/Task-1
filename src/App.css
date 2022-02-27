@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+*{
+	box-sizing:border-box;
+	margin : 0;
+	padding : 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+	max-width:1100px;
+	margin:0 auto;
+	padding : 0 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* header */
+nav{
+height: 70px;
+background-color: #282c34;
 }
-
-.App-header {
+nav .container{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:100%;
+}
+.TaskHeader{
+  color : #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+a{
+	margin-left:20px;	
+	font-weight:bold;
+  text-decoration:none;
+  color: aliceblue;
+}
+a:hover{
+  color:#282c34;
+  background-color: aliceblue;
+}
+footer{
+  height: 200px;
   background-color: #282c34;
-  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pageNotFound{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+}
+table{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content:center;
+  height : 340px;
+  overflow-x: auto;
+}
+tr th {
+  border:1px solid #000000;
+  background-color:#000;
+  color:#fff;
+}
+tr td {
+  border:1px solid #000000;
+}
+.contactContent{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 340px;
 }
 
-.App-link {
-  color: #61dafb;
+/* About */
+.PostsInAbout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.buttonsInAbout{
+  display: flex;
+  justify-content: center;
+}
+button{
+  background: #fff;
+  border: 2px solid #666;
+  padding: 10px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+@media (max-width: 767px){
+  table{
+    height: auto;
   }
 }
